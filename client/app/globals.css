@@ -75,7 +75,7 @@ main {
 }
 
 .hero-section {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../public/Asset Gambar/ThaiTea\ Vector.png');
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/Asset Gambar/ThaiTea Vector.png');
   background-size: cover;
   background-position: center;
   height: 120vh;
@@ -138,7 +138,7 @@ main {
 }
 
 .about-image {
-  background-image: url('../public/Asset Gambar/mitra.jpg');
+  background-image: url('/Asset Gambar/mitra.jpg');
   background-size: cover;
   background-position: center;
   min-height: 400px;

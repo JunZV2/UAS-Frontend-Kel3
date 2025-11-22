@@ -16,7 +16,7 @@ type Product = {
   gambarUrl: string;
 };
 
-const API_URL = 'http://localhost:5000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
 type ProductSlide = Product[];
 
@@ -27,7 +27,7 @@ export default function HomePage() {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:5000/api/products');
+        const response = await fetch(`{API_URL}/api/products`);
         if (!response.ok) throw new Error('Gagal mengambil produk');
         const data: Product[] = await response.json();
         const chunkedData: ProductSlide[] = [];

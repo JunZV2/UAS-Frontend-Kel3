@@ -142,7 +142,7 @@ export default function HomePage() {
                         {productChunk.map((product) => (
                           <div className="col-md-4" key={product._id}>
                             <div className="carousel-product-card">
-                            <img src={${API_URL}${product.gambarUrl}} alt={product.nama} className="product-image"/><h3 className="product-name">{product.nama}</h3>
+                            <img src={`${API_URL}${product.gambarUrl}`} alt={product.nama} className="product-image"/><h3 className="product-name">{product.nama}</h3>
                               <p className="product-desc">{product.deskripsi}</p>
                             </div>
                           </div>

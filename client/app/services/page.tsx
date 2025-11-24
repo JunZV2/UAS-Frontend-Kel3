@@ -706,9 +706,13 @@ export default function ServicesPage() {
                <Nav.Link as={Link} href="/about" className="nav-link">Tentang Kami</Nav.Link>
                <Nav.Link as={Link} href="/services" className="nav-link active">Layanan</Nav.Link>
                <Nav.Link as={Link} href="/dashboard" className="nav-link">Dashboard</Nav.Link>
-               <Nav.Link as={Link} href="/contact" className="nav-link d-flex align-items-center">
+               {/* <Nav.Link as={Link} href="/contact" className="nav-link d-flex align-items-center">
                  Hubungi Kami
-               </Nav.Link>
+               </Nav.Link> */}
+               <Nav.Link as={Link} href="/contact" className="nav-link d-flex align-items-center">
+          <i className="bi bi-person-lines-fill me-2"></i>          
+        </Nav.Link>
+               
              </Nav>
            </Navbar.Collapse>
          </Navbar>
@@ -940,5 +944,6 @@ export default function ServicesPage() {
     </>
   );
 }
+
 
 

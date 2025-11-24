@@ -27,7 +27,7 @@ export default function HomePage() {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`{API_URL}/api/products`);
+        const response = await fetch(`${API_URL}/api/products`);
         if (!response.ok) throw new Error('Gagal mengambil produk');
         const data: Product[] = await response.json();
         const chunkedData: ProductSlide[] = [];

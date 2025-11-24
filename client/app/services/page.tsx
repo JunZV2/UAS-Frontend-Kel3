@@ -26,7 +26,7 @@ type Order = {
   orderId: string;
 };
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+const API_URL = 'https://uas-frontend-kel3-api.onrender.com';
 
 export default function ServicesPage() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -457,3 +457,4 @@ export default function ServicesPage() {
   );
 
 }
+

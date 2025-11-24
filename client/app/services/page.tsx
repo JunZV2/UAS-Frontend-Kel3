@@ -270,7 +270,7 @@ export default function ServicesPage() {
          </div>
       </main>
       
-      <footer className="main-footer animate-on-scroll" style={{ marginTop: '5rem' }}>
+      {/* <footer className="main-footer animate-on-scroll" style={{ marginTop: '5rem' }}>
         <div className="container">
            <div className="row align-items-center gy-3">
              <div className="col-md-4 text-center text-md-start">
@@ -289,6 +289,21 @@ export default function ServicesPage() {
              </div>
            </div>
          </div>
+      </footer> */}
+{/* Footer New */}
+        <footer className="main-footer animate-on-scroll">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6 text-center text-md-start">
+              <Link className="navbar-brand text-white" href="/">
+                <span className="logo-icon text-white">🥤</span> Di Di Thai Tea
+              </Link>
+            </div>
+            <div className="col-md-6 text-center text-md-end footer-text mt-3 mt-md-0">
+              <p className="mb-1">&copy; 2025 Di Di Thai Tea. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
       </footer>
 
       <Modal show={showModal} onHide={handleCloseModal} size="xl" centered>
@@ -457,4 +472,5 @@ export default function ServicesPage() {
   );
 
 }
+
 

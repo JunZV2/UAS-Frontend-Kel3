@@ -54,7 +54,7 @@ type Message = {
   tanggal: string;
 };
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+const API_URL = 'https://uas-frontend-kel3-api.onrender.com';
 
 type ProductFormProps = {
   formState: {
@@ -904,4 +904,5 @@ export default function AdminDashboardPage() {
   );
 
 }
+
 

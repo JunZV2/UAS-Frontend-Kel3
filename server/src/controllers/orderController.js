@@ -83,6 +83,20 @@ exports.createOrder = async (req, res) => {
   }
 };
 
+exports.deleteOrder = async (req, res) => {
+  try {
+    const order = await Order.findByIdAndDelete(req.params.id);
+
+    if (!order) {
+      return res.status(404).json({ message: 'Order tidak ditemukan' });
+    }
+
+    res.status(200).json({ message: 'Order berhasil dihapus' });
+  } catch (error) {
+    res.status(500).json({ message: 'Server Error', error: error.message });
+  }
+};
+
 exports.getAllOrders = async (req, res) => {
   try {
     const orders = await Order.find().sort({ tanggalPesanan: -1 });
@@ -133,3 +147,4 @@ exports.updateOrder = async (req, res) => {
     res.status(400).json({ message: 'Gagal update pesanan', error: error.message });
   }
 };
+
